@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cifra -> Letra</title>
+</head>
+<body>
+  <h1>Converta sua cifra em letra!</h1>
+  <div style="display: flex">
+    <div style="display: flex; flex-direction: column">
+      <button onclick="handleInput()" type="button" id="botao">Converter</button>
+      <textarea value="" type="textarea" id="input" cols="50" rows="30" placeholder="cole sua cifra aqui"></textarea>
+    </div>
+    <div style="flex-direction: column">
+      <button onclick="copiarTexto()" type="button" id="copyButton">Copiar</button>
+      <p id="paragrafo"></p>
+    </div>
+  </div>
+</body>
+<script src="cifraLetra.js"></script>
+</html>
