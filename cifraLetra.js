@@ -9,6 +9,9 @@ function handleInput() {
 
   let filtrado;
   filtrado = separarPorQuebraLinha.filter((linha) => !linha.includes('7'));
+  filtrado = filtrado.filter((linha) => !linha.includes('5'));
+  filtrado = filtrado.filter((linha) => !linha.includes('6'));
+  filtrado = filtrado.filter((linha) => !linha.includes('9'));
   filtrado = filtrado.filter((linha) => !linha.includes('/'));
   filtrado = filtrado.filter((linha) => !linha.includes('#'));
   filtrado = filtrado.filter((linha) => !linha.includes('G '));
@@ -21,7 +24,6 @@ function handleInput() {
   filtrado = filtrado.filter((linha) => !linha.includes('Cm '));
   filtrado = filtrado.filter((linha) => !linha.includes('A(sus2)'));
   // filtrado = filtrado.filter((linha) => !linha.includes('D'));
-  filtrado = filtrado.filter((linha) => !linha.includes('5'));
   // filtrado = filtrado.filter((linha) => !linha.includes('Dm '));
   filtrado = filtrado.filter((linha) => !linha.includes('E ') || !linha.includes('A '));
   filtrado = filtrado.filter((linha) => !linha.includes('D ') || !linha.includes('A '));
